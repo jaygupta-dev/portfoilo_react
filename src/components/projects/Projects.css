@@ -1,0 +1,64 @@
+@media (min-width: 992px) {
+    :root {
+        --fs-35: 4.5rem !important;
+        --section-padding: 50px !important;
+    }
+}
+
+.section {
+    padding-block: var(--section-padding);
+}
+
+
+/*****************************************************************/
+
+::-webkit-scrollbar {
+    width: 20px;
+    height: 8px !important;
+}
+
+.scrollbar-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
+}
+@media (min-width: 576px) {
+    .scrollbar-item {
+        flex: 0 0 calc(50% - 10px) !important;
+        max-width: calc(50% - 10px) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .scrollbar-item {
+        flex: 0 0 calc(33.333% - 13.33px) !important;
+        max-width: calc(33.333% - 13.33px) !important;
+    }
+}
+.card-banner {
+    aspect-ratio: 600 / 675;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (min-width: 1200px) {
+    .scrollbar-item {
+        min-width: calc(33.33% - 26.66px) !important;
+    }
+}
+@media (min-width: 1200px) {
+    .has-scrollbar {
+        gap: 20px !important;
+         justify-content: center;
+    }
+}
+.card-content {
+    background-color: rgba(255,255,255,0.9);
+}

@@ -1,0 +1,227 @@
+
+@media (min-width: 992px) {
+    .header {
+        background-color: transparent;
+        border-block-end: none;
+        padding-block: 15px !important;
+        padding-top : 20px !important;
+        transition: var(--transition);
+    }
+}
+
+.project-detail-card {
+    max-width: 1200px;
+    margin: 1rem auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom:1rem;
+    max-height:300px !important;
+}
+
+.project-image-wrapper,
+.project-text-wrapper {
+    width: 100%;
+}
+
+.project-image {
+    width: 100%;
+    max-height:300px !important;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.project-summary {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Breakpoint: ≥800px - Side-by-side layout */
+@media (min-width: 800px) {
+    .project-detail-content {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .project-image-wrapper {
+        width: 40%;
+    }
+
+    .project-text-wrapper {
+        width: 60%;
+        padding-left: 2rem;
+    }
+}
+
+/* Breakpoint: <767px - Adjust padding */
+@media (max-width: 767px) {
+    .project-detail-card {
+        padding: 1.5rem 1.25rem;
+    }
+}
+
+/* Breakpoint: <500px - Smaller padding and font */
+@media (max-width: 500px) {
+    .project-detail-card {
+        padding: 1rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-summary {
+        font-size: 0.95rem;
+    }
+}
+
+/* Breakpoint: <300px - Extra small font */
+@media (max-width: 300px) {
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-summary {
+        font-size: 0.85rem;
+    }
+}
+::-webkit-scrollbar {
+    width: 20px;
+    height: 8px !important;
+}
+
+/*.project-detail-card {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.project-summary {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+    .project-detail-card {
+        padding: 1rem;
+        width: 95vw;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .project-detail-card {
+        width: 98vw;
+        padding: 0.75rem;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-summary {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .project-summary {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .responsive-padding {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+}*/
+
+
+
+.has-scrollbar {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+    justify-content: center; /* Center single item */
+}
+
+.scrollbar-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: start;
+}
+
+@media (min-width: 576px) {
+    .scrollbar-item {
+        flex: 0 0 calc(50% - 10px) !important;
+        max-width: calc(50% - 10px) !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .scrollbar-item {
+        flex: 0 0 calc(33.333% - 13.33px) !important;
+        max-width: calc(33.333% - 13.33px) !important;
+    }
+}
+
+.card-banner {
+    aspect-ratio: 600 / 675;
+    width: 100%;
+    overflow: hidden;
+}
+
+.img-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    background-color: rgba(255,255,255,0.9);
+}
+

@@ -1,0 +1,57 @@
+
+/*-----------------------------------*\
+  #TIMELINE
+\*-----------------------------------*/
+
+.timeline-item {
+  padding-block: 20px;
+  font-size: var(--fs-18);
+  display: grid;
+  gap: 15px;
+}
+
+.timeline-item:not(:last-child) { border-block-end: 1px solid var(--black_10); }
+
+.timeline-item .item-period { font: unset; }
+
+.timeline-item .item-title { color: var(--black); }
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+
+  /**
+   * TIMELINE
+   */
+
+  .timeline-item {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+}
+
+
+/**
+ * responsive for larger than 992px screen
+ */
+
+@media (min-width: 992px) {
+  /**
+   * TIMELINE
+   */
+
+  .timeline-item { padding-block: 30px; }
+
+}
+
+
+/*************************************************************/

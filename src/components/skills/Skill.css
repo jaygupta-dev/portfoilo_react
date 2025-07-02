@@ -1,0 +1,195 @@
+
+/*-----------------------------------*\
+  #SKILLS
+\*-----------------------------------*/
+
+.skills-banner { display: none; }
+
+.skills { background-color: var(--black); }
+
+.skills .section-title { color: var(--white); }
+
+.skills .section-text {
+  color: var(--gray-x-11);
+  margin-block: 40px 45px;
+}
+
+.skills-item:not(:last-child) { margin-block-end: 25px; }
+
+.skills-list .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  font-family: var(--ff-poppins);
+  margin-block-end: 10px;
+}
+
+.skill-title {
+  font-size: unset;
+  font-weight: unset;
+}
+
+.skills .progress-box { background-color: var(--white_10); }
+
+.skills .progress {
+  background-color: var(--theme-color);
+  height: 8px;
+}
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+
+
+/**
+ * responsive for larger than 992px screen
+ */
+
+@media (min-width: 992px) {
+
+  /**
+   * SKILLS
+   */
+
+  .skills .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 150px;
+  }
+
+  .skills-banner {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    width: 410px;
+    height: 620px;
+    background-image: url('../images/portfolio-2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 105%;
+    background-attachment: fixed;
+    overflow: hidden;
+  }
+}
+
+
+/*******************************************************************/
+
+
+/*-----------------------------------*\
+  #Skills Section - Best Dark Theme
+\*-----------------------------------*/
+
+.skills-section {
+    background-color: var(--black); /* Dark section background */
+    color: var(--white);
+    padding-block: var(--section-padding);
+}
+
+/* About text */
+.skills-about {
+    margin-bottom: 50px;
+    color: var(--white);
+}
+
+    .skills-about .section-subtitle {
+        color: var(--theme-color);
+        font-weight: var(--fw-600);
+        margin-bottom: 10px;
+    }
+
+    .skills-about .section-title {
+        color: var(--white);
+        font-size: var(--fs-25);
+        font-weight: var(--fw-800);
+        margin-bottom: 15px;
+    }
+
+    .skills-about .section-text {
+        color: var(--gray-x-11);
+        font-size: 1.6rem;
+        line-height: 1.7;
+        /* max-width: 700px; */
+    }
+
+/* Grid layout for skills */
+.skills-grid {
+    display: grid;
+    gap: 30px;
+}
+
+@media (min-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Individual skill card */
+.skills-item {
+    background-color: hsl(0, 0%, 15%); /* Dark gray card */
+    color: var(--white);
+    padding: 20px 25px;
+    border-radius: var(--radius-10);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+    .skills-item:hover {
+        background-color: hsl(0, 0%, 20%);
+    }
+
+    /* Skill title */
+    .skills-item .skill-title {
+        font-size: 1.7rem;
+        font-weight: var(--fw-600);
+        color: var(--theme-color);
+        margin-bottom: 10px;
+    }
+
+    /* Skill list */
+    .skills-item ul {
+        padding-left: 20px;
+        list-style: disc;
+        font-size: 1.5rem;
+        color: var(--spanish-gray);
+        line-height: 1.7;
+    }
+
+        .skills-item ul li {
+            margin-bottom: 6px;
+        }
+
+@media (min-width: 992px) {
+    .timeline-item {
+         padding-block: 15px !important; 
+    }
+}
+:root {
+    --section-padding: 50px !important;
+}
+
+.bd-btm-grey{
+    border-bottom: 2px solid rgb(56, 56, 56);
+}
