@@ -232,7 +232,7 @@
 
 
 
-import './COntactUs.css'
+import './ContactUs.css'
 import Header from '../header/Header'
 import Footer from '../footer/Footer'
 import { useEffect, useState } from 'react'
