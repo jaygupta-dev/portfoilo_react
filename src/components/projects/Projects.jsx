@@ -46,7 +46,7 @@ function Projects() {
                                 <div className="card">
 
                                     <figure className="card-banner img-holder" style={{'--width': '600', '--height': '675',}}>
-                                        <img src={`${hostUrl}src/images/project/${project.projectImagePath}`} width="600" height="675" loading="lazy" alt="project" className="img-cover"/>
+                                        <img src={`${project.projectImagePath}`} width="600" height="675" loading="lazy" alt="project" className="img-cover"/>
                                     </figure>
 
                                     <a href={`${hostUrl}ProjectDetail?ProjectId=${project.id}`} className="card-content">

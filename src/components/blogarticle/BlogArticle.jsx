@@ -41,7 +41,7 @@ fetchApi();
                     <div className="card news-card">
 
                         <figure className="card-banner img-holder" style={{'--width': '600', '--height': '675',}}>
-                            <img src={`${hostUrl}src/images/articles/${data.imagePath}`} width="600" height="675" loading="lazy"
+                            <img src={`${data.imagePath}`} width="600" height="675" loading="lazy"
                                  alt="VS Code Gets New JavaScript Debugger" className="img-cover"/>
                         </figure>
 

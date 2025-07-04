@@ -52,7 +52,7 @@ function ProfileService(){
         <div className="container">
 
             <figure className="hero-banner img-holder has-before" style={{'--width': '640', '--height': '840',}} >
-                <img src={`${hostUrl}src/images/profile/${profileData.profilePath}`} width="640" height="840" alt="Bernard Smith" className="img-cover" />
+                <img src={`${profileData.profilePath}`} width="640" height="840" alt="Bernard Smith" className="img-cover" />
             </figure>
 
             <div className="hero-content">

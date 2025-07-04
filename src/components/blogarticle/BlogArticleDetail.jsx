@@ -75,7 +75,7 @@ function BlogArticleDetail() {
                                             <h1 id="article-heading">{data.heading}</h1>
 
                                             {data.imagePath && (
-                                                <img id="article-image" src={`${hostUrl}src/images/articles/${data.imagePath}`} alt="Article Image" />
+                                                <img id="article-image" src={`${data.imagePath}`} alt="Article Image" />
                                             )}
 
                                             {descArr.map((d, idx) => (
@@ -96,7 +96,7 @@ function BlogArticleDetail() {
                                         const briefDesc = nxt.briefDescription ? nxt.briefDescription.split('#')[0] : "";
                                         return (
                                             <a href={`?ArticleId=${nxt.id}`} className="sidebar-article" key={idx}>
-                                                <img className="sidebar-thumb" src={`${hostUrl}src/images/articles/${nxt.imagePath}`} alt="article image" />
+                                                <img className="sidebar-thumb" src={`${nxt.imagePath}`} alt="article image" />
                                                 <div className="sidebar-text">
                                                     <h3 className="sidebar-article-heading">{nxt.title}</h3>
                                                     <p className="sidebar-article-description">{briefDesc}</p>

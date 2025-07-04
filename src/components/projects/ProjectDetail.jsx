@@ -80,7 +80,7 @@ function ProjectDetail(){
                     <div class="project-detail-card">
                      <div className="project-detail-content" key={index}>
                         <div className="project-image-wrapper" style={{'position': 'relative'}}>
-                            <img className="project-slider-image project-image" src={`${hostUrl}src/images/project/${data.projectImagePath}`} alt="Project Image" />
+                            <img className="project-slider-image project-image" src={`${data.projectImagePath}`} alt="Project Image" />
                             <button className="prevBtn" style={{'position': 'absolute', 'top': '50%', 'left': '0', 'transform': 'translateY(-50%)'}} onclick={preProjectImage}>❮</button>
                             <button className="nextBtn" style={{'position': 'absolute', 'top': '50%', 'right': '0', 'transform': 'translateY(-50%)'}} onclick={nextProjectImage}>❯</button>
 
