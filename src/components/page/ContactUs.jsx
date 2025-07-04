@@ -246,7 +246,7 @@ function ContactUs() {
 
     useEffect(() => {
         const fetchApi = async () => {
-            const profileDetailResponse = await fetch(`${apiUrl}api/Home/ProfileDataContactUsPage`)
+            const profileDetailResponse = await fetch(`${apiUrl}api/HomeApi/ProfileDataContactUsPage`)
             const profileDetailapiData = await profileDetailResponse.json();
             if (profileDetailapiData.status === "Success") {
                 setProfileData(profileDetailapiData.data);
@@ -324,7 +324,7 @@ function ContactUs() {
         }
 
         try {
-            const response = await fetch(`${apiUrl}api/Home/SaveContactUsData`,{
+            const response = await fetch(`${apiUrl}api/HomeApi/SaveContactUsData`,{
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData)

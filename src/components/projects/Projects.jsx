@@ -12,7 +12,7 @@ function Projects() {
     useEffect(() => {
         const fectApi = async () => {
             try {
-                const projectResponse = await fetch(`${apiUrl}api/Home/ProjectData`);
+                const projectResponse = await fetch(`${apiUrl}api/HomeApi/ProjectData`);
                 const projectApiData = await projectResponse.json();
 
                 if (projectApiData.status == "Success") {

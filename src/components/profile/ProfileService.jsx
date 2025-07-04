@@ -11,7 +11,7 @@ function ProfileService(){
     useEffect(() => {
     const fetchApi = async () => {
         try {
-            const profileResponse = await fetch(`${apiUrl}api/Home/ProfileDetail`);
+            const profileResponse = await fetch(`${apiUrl}api/HomeApi/ProfileDetail`);
             const profileApiData = await profileResponse.json();
             // console.log(response);
             // console.log(response.status);   

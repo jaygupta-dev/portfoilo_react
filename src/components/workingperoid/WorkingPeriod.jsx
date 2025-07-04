@@ -11,7 +11,7 @@ function WorkingPeriod() {
     useEffect(() => {
 
         const fetchApi = async () => {
-            const apiResponse = await fetch(`${apiUrl}api/Home/WorkingPeriod`);
+            const apiResponse = await fetch(`${apiUrl}api/HomeApi/WorkingPeriod`);
             const apiData = await apiResponse.json();
             if(apiData.status == "Success"){
                 setWorkingPeriodData(apiData.data);

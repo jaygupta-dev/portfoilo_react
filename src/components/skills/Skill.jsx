@@ -13,13 +13,13 @@ function Skill(){
 
         const fecthcApi = async () => {
             try{
-                const aboutResponse = await fetch(`${apiUrl}api/Home/AboutDeveloper`);
+                const aboutResponse = await fetch(`${apiUrl}api/HomeApi/AboutDeveloper`);
                 const aboutApiData = await aboutResponse.json();
                 if(aboutApiData.status == "Success"){
                     setAboutData(aboutApiData.data);
                 }
 
-                const skillResponse = await fetch(`${apiUrl}api/Home/SkillSection`);
+                const skillResponse = await fetch(`${apiUrl}api/HomeApi/SkillSection`);
                 const skillApiData = await skillResponse.json();
                 if(skillApiData.status == "Success"){
                     setSkillData(skillApiData.data);

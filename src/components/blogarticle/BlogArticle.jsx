@@ -11,7 +11,7 @@ function BlogArticle(){
     useEffect(()=>{
 
         const fetchApi = async ()=>{
-            const apiResponse = await fetch(`${apiUrl}api/Home/BlogArticles`);
+            const apiResponse = await fetch(`${apiUrl}api/HomeApi/BlogArticles`);
             const apiData = await apiResponse.json();
             if(apiData.status == "Success"){
                 setBlogArticleData(apiData.data);

@@ -22,7 +22,7 @@ function ProjectDetail(){
 
             if (!projectId) return;
 
-            const projectResponse = await fetch(`${apiUrl}api/Home/ProjectDetail?ProjectId=${projectId}`);
+            const projectResponse = await fetch(`${apiUrl}api/HomeApi/ProjectDetail?ProjectId=${projectId}`);
             const projectApiData = await projectResponse.json();
 
             if(projectApiData.status == "Success"){

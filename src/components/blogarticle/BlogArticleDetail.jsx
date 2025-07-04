@@ -38,10 +38,10 @@ function BlogArticleDetail() {
 
             // if (!articleId) return;
 
-            const articleDetailResponse = await fetch(`${apiUrl}api/Home/BlogArticleDetail?ArticleId=${articleId}`);
+            const articleDetailResponse = await fetch(`${apiUrl}api/HomeApi/BlogArticleDetail?ArticleId=${articleId}`);
             const articleDetailApiData = await articleDetailResponse.json();
 
-            const articleResponse = await fetch(`${apiUrl}api/Home/BlogArticles`);
+            const articleResponse = await fetch(`${apiUrl}api/HomeApi/BlogArticles`);
             const articleApiData = await articleResponse.json();
 
             if (articleDetailApiData.status == "Success") {
